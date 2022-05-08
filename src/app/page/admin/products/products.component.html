@@ -1,0 +1,21 @@
+<div class="py-3 mt-5">
+  <table class="table table-bordered">
+    <caption class="d-none">New York City Marathon Results 2013</caption>
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+    </tr>
+    </thead>
+    <tbody *ngIf="products !== null">
+    <tr *ngFor="let prod of products;let index = index">
+      <th scope="row">{{index + 1}}</th>
+      <td>{{prod.name}}</td>
+      <td>{{prod.price | currency:"TND ":"symbol"}}</td>
+
+    </tr>
+
+    </tbody>
+  </table>
+</div>

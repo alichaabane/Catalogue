@@ -1,0 +1,8 @@
+<div class="py-3 mt-5" *ngIf="categories">
+<div class="list-group"  *ngFor="let cat of categories">
+    <button
+      class="list-group-item list-group-item-action"
+       aria-current="true"
+       (click)="onGetProducts(cat)">{{cat.name}}</button>
+</div>
+</div>
