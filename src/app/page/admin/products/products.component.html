@@ -12,7 +12,7 @@
     <tr *ngFor="let prod of products;let index = index">
       <th scope="row">{{index + 1}}</th>
       <td>{{prod.name}}</td>
-      <td>{{prod.price | currency:"TND ":"symbol"}}</td>
+      <td>{{prod.price | number: '0.4' | currency:"TND ":"symbol" }}</td>
 
     </tr>
 
